@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data Driven Framework">
+    
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+        <listener class-name="pl.mwewerek.listeners.CustomListeners"></listener>
+    </listeners>
+    
+    <test verbose="2" preserve-order="true"
+          name="Bank Manager Login Test">
+        <classes>
+            <class name="pl.mwewerek.testcases.BankManagerLoginTest">
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="Add Customer Test">
+        <classes>
+            <class name="pl.mwewerek.testcases.AddCustomerTest">
+            </class>
+        </classes>
+    </test>
+
+</suite>

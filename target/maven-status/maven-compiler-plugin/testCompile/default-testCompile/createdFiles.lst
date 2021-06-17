@@ -1,0 +1,10 @@
+pl\mwewerek\testcases\OpenAccountTest.class
+pl\mwewerek\rough\TestProperties.class
+pl\mwewerek\utilities\ExcelReader.class
+pl\mwewerek\utilities\ExtentManager.class
+pl\mwewerek\base\TestBase.class
+pl\mwewerek\listeners\CustomListeners.class
+pl\mwewerek\testcases\AddCustomerTest.class
+pl\mwewerek\utilities\ScreenshotManager.class
+pl\mwewerek\testcases\BankManagerLoginTest.class
+pl\mwewerek\utilities\DataProvider.class
