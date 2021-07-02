@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Add Customer Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 17 20:35:59 CEST 2021</td>
+<td>Started on:</td><td>Fri Jul 02 19:04:26 CEST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1391 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1674 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,28 +67,40 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='pl.mwewerek.testcases.AddCustomerTest.addCustomerTest()'><b>addCustomerTest</b><br>Test class: pl.mwewerek.testcases.AddCustomerTest<br>Parameters: {postCode=01-111, lastName=Wewerek, firstName=Michal, alertText=Customer added successfully with customer id}<br/>
-<a href="#Output-448569108" onClick='toggleBox("Output-448569108", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-448569108" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-448569108">
-Click the following link: <br/>
-<a target='_blank' href=Thu_Jun_17_20_35_59_CEST_2021.jpg>ScreenshotError</a><br/>
-<br><br/>
-<a target='_blank' href=Thu_Jun_17_20_35_59_CEST_2021.jpg><img src=Thu_Jun_17_20_35_59_CEST_2021.jpg height=200 width=200></img></a><br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: Add Customer Test failed
-	at org.testng.Assert.fail(Assert.java:99)
-	at pl.mwewerek.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:26)
+<td title='pl.mwewerek.testcases.AddCustomerTest.addCustomerTest()'><b>addCustomerTest</b><br>Test class: pl.mwewerek.testcases.AddCustomerTest<br>Parameters: {postCode=01-333, lastName=Wewerek, runMode=Y, firstName=Mateusz, alertText=Customer added successfully with customer id}, public void pl.mwewerek.testcases.AddCustomerTest.addCustomerTest(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td></td>
+<td>0</td>
+<td>pl.mwewerek.testcases.AddCustomerTest@13e344d</td></tr>
+<tr>
+<td title='pl.mwewerek.testcases.AddCustomerTest.addCustomerTest()'><b>addCustomerTest</b><br>Test class: pl.mwewerek.testcases.AddCustomerTest<br>Parameters: {postCode=01-222, lastName=Wewerek, runMode=Y, firstName=Marlena, alertText=Customer added successfully with customer id}, public void pl.mwewerek.testcases.AddCustomerTest.addCustomerTest(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td></td>
+<td>0</td>
+<td>pl.mwewerek.testcases.AddCustomerTest@13e344d</td></tr>
+<tr>
+<td title='pl.mwewerek.testcases.AddCustomerTest.addCustomerTest()'><b>addCustomerTest</b><br>Test class: pl.mwewerek.testcases.AddCustomerTest<br>Parameters: {postCode=01-111, lastName=Wewerek, runMode=Y, firstName=Michal, alertText=Customer added successfully with customer id}, public void pl.mwewerek.testcases.AddCustomerTest.addCustomerTest(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td></td>
+<td>0</td>
+<td>pl.mwewerek.testcases.AddCustomerTest@13e344d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pl.mwewerek.testcases.AddCustomerTest.addCustomerTest()'><b>addCustomerTest</b><br>Test class: pl.mwewerek.testcases.AddCustomerTest<br>Parameters: {postCode=01-444, lastName=Wewerek, runMode=N, firstName=Mariusz, alertText=Customer added successfully with customer id}, public void pl.mwewerek.testcases.AddCustomerTest.addCustomerTest(java.util.Hashtable,java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td><div><pre>org.testng.SkipException: Skipping the test: addCustomerTest
+	at pl.mwewerek.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -120,10 +132,9 @@ Click the following link: <br/>
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-</pre></div><a href='#' onClick='toggleBox("stack-trace448569108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace448569108'><pre>java.lang.AssertionError: Add Customer Test failed
-	at org.testng.Assert.fail(Assert.java:99)
-	at pl.mwewerek.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2062209967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2062209967'><pre>org.testng.SkipException: Skipping the test: addCustomerTest
+	at pl.mwewerek.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -156,8 +167,8 @@ Click the following link: <br/>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </pre></div></td>
-<td>1</td>
-<td>pl.mwewerek.testcases.AddCustomerTest@7b36aa0c</td></tr>
+<td>0</td>
+<td>pl.mwewerek.testcases.AddCustomerTest@13e344d</td></tr>
 </table><p>
 </body>
 </html>

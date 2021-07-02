@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.387 sec <<< FAILURE! - in TestSuite
-bankManagerLoginTest(pl.mwewerek.testcases.BankManagerLoginTest)  Time elapsed: 1.572 sec  <<< FAILURE!
-java.lang.AssertionError: Failed to login as a bank manager
-	at org.testng.Assert.fail(Assert.java:99)
-	at pl.mwewerek.testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:19)
-
-addCustomerTest(pl.mwewerek.testcases.AddCustomerTest)  Time elapsed: 1.371 sec  <<< FAILURE!
-java.lang.AssertionError: Add Customer Test failed
-	at org.testng.Assert.fail(Assert.java:99)
-	at pl.mwewerek.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:26)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 20.154 sec - in TestSuite

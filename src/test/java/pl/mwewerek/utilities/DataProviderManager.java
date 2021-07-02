@@ -1,13 +1,14 @@
 package pl.mwewerek.utilities;
 
+import org.testng.annotations.DataProvider;
 import pl.mwewerek.base.TestBase;
 
 import java.lang.reflect.Method;
 import java.util.Hashtable;
 
-public class DataProvider extends TestBase {
+public class DataProviderManager extends TestBase {
 
-    @org.testng.annotations.DataProvider(name = "dataProvider")
+    @DataProvider(name = "dataProvider")
     public static Object[][] getData(Method method) {  // Method method get method name
 
         String sheetName = method.getName();  // Returns the name of the method
